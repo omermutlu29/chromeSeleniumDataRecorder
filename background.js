@@ -1,4 +1,5 @@
 chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
+    console.log(details);
     chrome.storage.local.get(['startRecord'],function(res){
         if(res.startRecord){
             if (details.frameId === 0) {
