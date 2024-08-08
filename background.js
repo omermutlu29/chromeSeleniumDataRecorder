@@ -1,6 +1,6 @@
 chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
     console.log(details);
-    chrome.storage.local.get(['startRecord'],function(res){
+    /*chrome.storage.local.get(['startRecord'],function(res){
         if(res.startRecord){
             if (details.frameId === 0) {
                 chrome.storage.local.get(['events'], function(result) {
@@ -16,5 +16,5 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
                 })
             }
         }
-    })
+    })*/
 });
